@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/btn2_back"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_gravity=""
+        android:layout_weight="0.5"
+        android:background="#FFFFFF"
+        android:src="@mipmap/img9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_sex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="性别(男为1 女为2)"
+            android:inputType="number"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="年龄"
+            android:inputType="number"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/text_height"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="身高(cm)"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/text_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="体重(kg)"
+            android:inputType="numberDecimal"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="#21DAF3"
+        android:text="开始测试"
+        android:textColor="#FFFFFF"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
