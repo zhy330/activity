@@ -21,8 +21,8 @@ public class Main2Activity extends AppCompatActivity {
 
     private ImageButton bt;
     private Button bt_start;
-    private int sex=0;
     private int year=0;
+    private int sex=0;
     private double weight=0.1;
     private double height=0.1;
     private double bmi=0.1;
@@ -70,16 +70,17 @@ public class Main2Activity extends AppCompatActivity {
                 String yearString = text_year.getText().toString();
                 String weightString = text_weight.getText().toString();
                 String heightString = text_height.getText().toString();
+
                 if(sexString.equals("")){Toast.makeText(Main2Activity.this,"请正确输入",Toast.LENGTH_LONG).show();}
+                else{sex = Integer.valueOf(sexString);}
                 if(yearString.equals("")){Toast.makeText(Main2Activity.this,"请正确输入",Toast.LENGTH_LONG).show();}
+                else{year = Integer.valueOf(yearString);}
                 if(weightString.equals("")){Toast.makeText(Main2Activity.this,"请正确输入",Toast.LENGTH_LONG).show();}
+                else{ weight = Double.valueOf(weightString);}
                 if(heightString.equals("")){Toast.makeText(Main2Activity.this,"请正确输入",Toast.LENGTH_LONG).show();}
-                else{
-                    int sex = Integer.valueOf(sexString);
-                    int year =Integer.valueOf(yearString);
-                    Double weight = Double.valueOf(weightString);
-                    Double height = Double.valueOf(heightString);
-                }
+                else{ height = Double.valueOf(heightString);}
+
+
                 if (sex!=0 && (year >= 1 && year <= 100) && (height >= 50.0 && height <= 250.0) && (weight >= 5.0 && weight <= 200.0)) {
                     if (sex==1) {
                         weight1 = weight;//// intent.putExtra("we1",weight1);
